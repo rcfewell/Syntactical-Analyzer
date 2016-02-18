@@ -1,0 +1,8 @@
+Input File: test.in
+   1: int a = 4, b = 5, c = 45;
+Error at 1,25: , expected
+   2: int d = a < b ? d + c : d - c;
+Error at 2,30: , expected
+   3: int x = a ** b;
+Error at 3,12: Identifier or numeric literal expected
+Error at 3,15: , expected

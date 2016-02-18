@@ -1,0 +1,35 @@
+#include <iostream>
+#include <cstdlib>
+#include <iomanip>
+#include "lex.h"
+#include "syn.h"
+#include "SetLimits.h"
+
+using namespace std;
+
+int main( int argc, char * argv[] )
+{
+
+	if( argc < 2 )
+	{
+		cout << "format: proj2 <filename>:\n";
+		exit( 1 );
+	}
+
+	SetLimits ();
+
+	// token_type t;
+	// Lex lex;
+
+	// Lex lex( argv[1] );
+
+	Syn Syn( argv[1] );
+	token_type t;
+
+	while( t=lex.get_token () != EOFT )
+	  cout << '\t' << left << setw( 10 ) << lex.get_token_name( t ) << '\t' << lex.get_lexeme () << endl << right;
+	int i = 0;
+
+	return 0;
+}
+

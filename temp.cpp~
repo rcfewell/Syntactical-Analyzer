@@ -1,0 +1,163 @@
+#include "syn.h"
+
+
+Syn::~Syn ()
+{
+	cout << errors << " errors found in input file" << endl;
+}
+
+void Syn::program()
+{
+	string type = lex.get_token_name( ct );
+	cout << "Starting <program>. Current Token = " << type << endl;
+	if( ct == INTTYPE || ct == DBLTYPE )
+	{
+		stmt();
+
+		if( ct != SEMI )
+		{
+			lex.error_message( "Expected a semi-colon");
+			errors++;
+		}
+		else
+			ct = lex.get_token();
+	}
+	more_stmts();
+	if( ct == EOFT )
+	{
+		ct = lex.get_token();
+	}
+}
+
+void Syn::var()
+{
+	ct = lex.get_token();
+	if( ct == IDENT || ct == NUMLIT )
+		ct = lex.get_token();
+	else
+	{
+		errors++;
+		lex.error_message( "Expected idientifier or num literal" );
+	}
+}
+
+void Syn::uoppre()
+{
+	ct = lex.get_token();
+
+	if( ct == PLUS || ct == MINUS || ct == NOT || ct == TILDA
+		|| ct == PLUSPLUS || ct == MINUSMINUS )
+		ct = lex.get_token();
+	else
+	{
+		errors++;
+		lex.error_message( "Expected operator" );
+	}
+}
+
+void Syn::post()
+{
+	ct = lex.get_token();
+
+	if( ct == PLUSPLUS || ct == MINUSMINUS ||
+		ct == QUEST )
+		ct = lex.get_token();
+	else
+	{
+		errors++;
+		lex.error_message( "Expected a post operator" );
+	}
+}
+
+void Syn::binop()
+{
+	ct = lex.get_token();
+
+	if( ct == PLUS || ct == MINUS || ct == MULT || ct == DIV || 
+		ct == MOD || ct == AND || ct == OR || ct == XOR || 
+		ct == ASSIGN || ct == LT || ct == GT || ct == SHIFTL
+		|| ct == SHIFTR || ct == PLUSEQ || ct == MINUSEQ ||
+		ct == MULTEQ || ct == DIVEQ || ct == MODEQ || ct == NOTEQ
+		|| ct == LOGAND || ct == ANDEQ || ct == LOGOR || ct == OREQ
+		|| ct == XOREQ || ct == EQUALTO || ct ==SHIFTLEQ || ct == LTE 
+		|| ct == SHIFTREQ || ct == GTE || ct == COMMA || ct == EXP 
+		|| ct == EXPEQ )
+		ct = lex.get_token();
+	else
+	{
+		errors++;
+		lex.error_message( "Expected binary operator." );
+	}
+}
+
+void Syn::stmt_tail ()
+{
+	ct = lex.get_token();
+
+	if( ct == QUEST )
+	{
+		binop();
+		// stmt();
+		if( ct != COLON )
+		{
+			errors++;
+			lex.error_message( "Expected a colon" );
+		}
+		else
+			ct = lex.get_token();
+	}
+	// stmt();
+}
+
+void Syn::pre ()
+{
+	ct = lex.get_token();
+
+	if( ct == QUEST )
+		ct = lex.get_token();
+	else 
+	{
+		errors++;
+		lex.error_message( "Expected quest" );
+	}
+	uoppre();
+	pre();
+}
+
+
+void Syn::more_stmts()
+{
+	ct = lex.get_token();
+	string type = lex.get_token_name( ct );
+	cout << "starting <more_stmts> Current token = " << type << endl;
+
+	if( ct == INTTYPE || ct == DBLTYPE )
+	{
+		stmt();
+
+		if( ct != SEMI )
+		{
+			lex.error_message( "Expected a semi-colon" );
+			errors++;
+		}
+		else
+			ct = lex.get_token();
+	}
+
+}
+
+
+void Syn::stmt()
+{
+	// term();
+	stmt_tail();
+
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,839 @@
+Starting <program>
+token: INTTYPE Lexeme: int
+Starting <decl>
+token: INTTYPE Lexeme: int
+Starting <ntype>
+token: INTTYPE Lexeme: int
+Ending <ntype>
+Starting <decl_tail>
+token: ASSIGN Lexeme: =
+Starting <stmt>
+token: NUMLIT Lexeme: 0
+Starting <term>
+token: NUMLIT Lexeme: 0
+Starting <pre>
+token: NUMLIT Lexeme: 0
+Ending <pre>
+Starting <var>
+token: NUMLIT Lexeme: 0
+Ending <var>
+Starting <post>
+token: SEMI Lexeme: ;
+Ending <post>
+Ending <term>
+Starting <stmt_tail>
+token: SEMI Lexeme: ;
+Ending <stmt_tail>
+Ending <stmt>
+Ending <decl_tail>
+Starting <more_decls>
+token: SEMI Lexeme: ;
+Ending <more_decls>
+Ending <decl>
+SHOULD GET SEMI IN <program>
+Starting <more_stmts>
+token: DBLTYPE Lexeme: double
+Starting <decl>
+token: DBLTYPE Lexeme: double
+Starting <ntype>
+token: DBLTYPE Lexeme: double
+Ending <ntype>
+Starting <decl_tail>
+token: ASSIGN Lexeme: =
+Starting <stmt>
+token: NUMLIT Lexeme: 5.5
+Starting <term>
+token: NUMLIT Lexeme: 5.5
+Starting <pre>
+token: NUMLIT Lexeme: 5.5
+Ending <pre>
+Starting <var>
+token: NUMLIT Lexeme: 5.5
+Ending <var>
+Starting <post>
+token: NUMLIT Lexeme: .5
+Ending <post>
+Ending <term>
+Starting <stmt_tail>
+token: NUMLIT Lexeme: .5
+Ending <stmt_tail>
+Ending <stmt>
+Ending <decl_tail>
+Starting <more_decls>
+token: NUMLIT Lexeme: .5
+Ending <more_decls>
+Ending <decl>
+SHOULD SEE SEMI IN <more_stmts>
+Starting <more_stmts>
+token: NUMLIT Lexeme: .5
+Starting <stmt>
+token: NUMLIT Lexeme: .5
+Starting <term>
+token: NUMLIT Lexeme: .5
+Starting <pre>
+token: NUMLIT Lexeme: .5
+Ending <pre>
+Starting <var>
+token: NUMLIT Lexeme: .5
+Ending <var>
+Starting <post>
+token: SEMI Lexeme: ;
+Ending <post>
+Ending <term>
+Starting <stmt_tail>
+token: SEMI Lexeme: ;
+Ending <stmt_tail>
+Ending <stmt>
+SHOULD SEE SEMI IN <more_stmts>
+Starting <more_stmts>
+token: INTTYPE Lexeme: int
+Starting <decl>
+token: INTTYPE Lexeme: int
+Starting <ntype>
+token: INTTYPE Lexeme: int
+Ending <ntype>
+Starting <decl_tail>
+token: ASSIGN Lexeme: =
+Starting <stmt>
+token: IDENT Lexeme: a
+Starting <term>
+token: IDENT Lexeme: a
+Starting <pre>
+token: IDENT Lexeme: a
+Ending <pre>
+Starting <var>
+token: IDENT Lexeme: a
+Ending <var>
+Starting <post>
+token: IDENT Lexeme: b
+Ending <post>
+Ending <term>
+Starting <stmt_tail>
+token: IDENT Lexeme: b
+Ending <stmt_tail>
+Ending <stmt>
+Ending <decl_tail>
+Starting <more_decls>
+token: IDENT Lexeme: b
+Ending <more_decls>
+Ending <decl>
+SHOULD SEE SEMI IN <more_stmts>
+Starting <more_stmts>
+token: IDENT Lexeme: b
+Starting <stmt>
+token: IDENT Lexeme: b
+Starting <term>
+token: IDENT Lexeme: b
+Starting <pre>
+token: IDENT Lexeme: b
+Ending <pre>
+Starting <var>
+token: IDENT Lexeme: b
+Ending <var>
+Starting <post>
+token: PLUS Lexeme: +
+Ending <post>
+Ending <term>
+Starting <stmt_tail>
+token: PLUS Lexeme: +
+Starting <binop>
+token: PLUS Lexeme: +
+Ending <binop>
+Starting <stmt>
+token: NUMLIT Lexeme: 2.1
+Starting <term>
+token: NUMLIT Lexeme: 2.1
+Starting <pre>
+token: NUMLIT Lexeme: 2.1
+Ending <pre>
+Starting <var>
+token: NUMLIT Lexeme: 2.1
+Ending <var>
+Starting <post>
+token: SEMI Lexeme: ;
+Ending <post>
+Ending <term>
+Starting <stmt_tail>
+token: SEMI Lexeme: ;
+Ending <stmt_tail>
+Ending <stmt>
+Ending <stmt_tail>
+Ending <stmt>
+SHOULD SEE SEMI IN <more_stmts>
+Starting <more_stmts>
+token: DBLTYPE Lexeme: double
+Starting <decl>
+token: DBLTYPE Lexeme: double
+Starting <ntype>
+token: DBLTYPE Lexeme: double
+Ending <ntype>
+Starting <decl_tail>
+token: ASSIGN Lexeme: =
+Starting <stmt>
+token: IDENT Lexeme: c
+Starting <term>
+token: IDENT Lexeme: c
+Starting <pre>
+token: IDENT Lexeme: c
+Ending <pre>
+Starting <var>
+token: IDENT Lexeme: c
+Ending <var>
+Starting <post>
+token: MINUSEQ Lexeme: -=
+Ending <post>
+Ending <term>
+Starting <stmt_tail>
+token: MINUSEQ Lexeme: -=
+Starting <binop>
+token: MINUSEQ Lexeme: -=
+Ending <binop>
+Starting <stmt>
+token: IDENT Lexeme: b
+Starting <term>
+token: IDENT Lexeme: b
+Starting <pre>
+token: IDENT Lexeme: b
+Ending <pre>
+Starting <var>
+token: IDENT Lexeme: b
+Ending <var>
+Starting <post>
+token: PLUS Lexeme: +
+Ending <post>
+Ending <term>
+Starting <stmt_tail>
+token: PLUS Lexeme: +
+Starting <binop>
+token: PLUS Lexeme: +
+Ending <binop>
+Starting <stmt>
+token: IDENT Lexeme: a
+Starting <term>
+token: IDENT Lexeme: a
+Starting <pre>
+token: IDENT Lexeme: a
+Ending <pre>
+Starting <var>
+token: IDENT Lexeme: a
+Ending <var>
+Starting <post>
+token: SHIFTL Lexeme: <<
+Ending <post>
+Ending <term>
+Starting <stmt_tail>
+token: SHIFTL Lexeme: <<
+Starting <binop>
+token: SHIFTL Lexeme: <<
+Ending <binop>
+Starting <stmt>
+token: NUMLIT Lexeme: 2
+Starting <term>
+token: NUMLIT Lexeme: 2
+Starting <pre>
+token: NUMLIT Lexeme: 2
+Ending <pre>
+Starting <var>
+token: NUMLIT Lexeme: 2
+Ending <var>
+Starting <post>
+token: LT Lexeme: <
+Ending <post>
+Ending <term>
+Starting <stmt_tail>
+token: LT Lexeme: <
+Starting <binop>
+token: LT Lexeme: <
+Ending <binop>
+Starting <stmt>
+token: NUMLIT Lexeme: 1
+Starting <term>
+token: NUMLIT Lexeme: 1
+Starting <pre>
+token: NUMLIT Lexeme: 1
+Ending <pre>
+Starting <var>
+token: NUMLIT Lexeme: 1
+Ending <var>
+Starting <post>
+token: PLUS Lexeme: +
+Ending <post>
+Ending <term>
+Starting <stmt_tail>
+token: PLUS Lexeme: +
+Starting <binop>
+token: PLUS Lexeme: +
+Ending <binop>
+Starting <stmt>
+token: IDENT Lexeme: abc
+Starting <term>
+token: IDENT Lexeme: abc
+Starting <pre>
+token: IDENT Lexeme: abc
+Ending <pre>
+Starting <var>
+token: IDENT Lexeme: abc
+Ending <var>
+Starting <post>
+token: IDENT Lexeme: a
+Ending <post>
+Ending <term>
+Starting <stmt_tail>
+token: IDENT Lexeme: a
+Ending <stmt_tail>
+Ending <stmt>
+Ending <stmt_tail>
+Ending <stmt>
+Ending <stmt_tail>
+Ending <stmt>
+Ending <stmt_tail>
+Ending <stmt>
+Ending <stmt_tail>
+Ending <stmt>
+Ending <stmt_tail>
+Ending <stmt>
+Ending <decl_tail>
+Starting <more_decls>
+token: IDENT Lexeme: a
+Ending <more_decls>
+Ending <decl>
+SHOULD SEE SEMI IN <more_stmts>
+Starting <more_stmts>
+token: IDENT Lexeme: a
+Starting <stmt>
+token: IDENT Lexeme: a
+Starting <term>
+token: IDENT Lexeme: a
+Starting <pre>
+token: IDENT Lexeme: a
+Ending <pre>
+Starting <var>
+token: IDENT Lexeme: a
+Ending <var>
+Starting <post>
+token: ASSIGN Lexeme: =
+Ending <post>
+Ending <term>
+Starting <stmt_tail>
+token: ASSIGN Lexeme: =
+Starting <binop>
+token: ASSIGN Lexeme: =
+Ending <binop>
+Starting <stmt>
+token: LPAREN Lexeme: (
+Starting <term>
+token: LPAREN Lexeme: (
+Starting <stmt>
+token: IDENT Lexeme: a
+Starting <term>
+token: IDENT Lexeme: a
+Starting <pre>
+token: IDENT Lexeme: a
+Ending <pre>
+Starting <var>
+token: IDENT Lexeme: a
+Ending <var>
+Starting <post>
+token: PLUS Lexeme: +
+Ending <post>
+Ending <term>
+Starting <stmt_tail>
+token: PLUS Lexeme: +
+Starting <binop>
+token: PLUS Lexeme: +
+Ending <binop>
+Starting <stmt>
+token: IDENT Lexeme: b
+Starting <term>
+token: IDENT Lexeme: b
+Starting <pre>
+token: IDENT Lexeme: b
+Ending <pre>
+Starting <var>
+token: IDENT Lexeme: b
+Ending <var>
+Starting <post>
+token: DIV Lexeme: /
+Ending <post>
+Ending <term>
+Starting <stmt_tail>
+token: DIV Lexeme: /
+Starting <binop>
+token: DIV Lexeme: /
+Ending <binop>
+Starting <stmt>
+token: IDENT Lexeme: c
+Starting <term>
+token: IDENT Lexeme: c
+Starting <pre>
+token: IDENT Lexeme: c
+Ending <pre>
+Starting <var>
+token: IDENT Lexeme: c
+Ending <var>
+Starting <post>
+token: MULT Lexeme: *
+Ending <post>
+Ending <term>
+Starting <stmt_tail>
+token: MULT Lexeme: *
+Starting <binop>
+token: MULT Lexeme: *
+Ending <binop>
+Starting <stmt>
+token: NUMLIT Lexeme: 4
+Starting <term>
+token: NUMLIT Lexeme: 4
+Starting <pre>
+token: NUMLIT Lexeme: 4
+Ending <pre>
+Starting <var>
+token: NUMLIT Lexeme: 4
+Ending <var>
+Starting <post>
+token: PLUS Lexeme: +
+Ending <post>
+Ending <term>
+Starting <stmt_tail>
+token: PLUS Lexeme: +
+Starting <binop>
+token: PLUS Lexeme: +
+Ending <binop>
+Starting <stmt>
+token: IDENT Lexeme: d
+Starting <term>
+token: IDENT Lexeme: d
+Starting <pre>
+token: IDENT Lexeme: d
+Ending <pre>
+Starting <var>
+token: IDENT Lexeme: d
+Ending <var>
+Starting <post>
+token: PLUSEQ Lexeme: +=
+Ending <post>
+Ending <term>
+Starting <stmt_tail>
+token: PLUSEQ Lexeme: +=
+Starting <binop>
+token: PLUSEQ Lexeme: +=
+Ending <binop>
+Starting <stmt>
+token: NUMLIT Lexeme: 2
+Starting <term>
+token: NUMLIT Lexeme: 2
+Starting <pre>
+token: NUMLIT Lexeme: 2
+Ending <pre>
+Starting <var>
+token: NUMLIT Lexeme: 2
+Ending <var>
+Starting <post>
+token: MOD Lexeme: %
+Ending <post>
+Ending <term>
+Starting <stmt_tail>
+token: MOD Lexeme: %
+Starting <binop>
+token: MOD Lexeme: %
+Ending <binop>
+Starting <stmt>
+token: LPAREN Lexeme: (
+Starting <term>
+token: LPAREN Lexeme: (
+Starting <stmt>
+token: NUMLIT Lexeme: 2
+Starting <term>
+token: NUMLIT Lexeme: 2
+Starting <pre>
+token: NUMLIT Lexeme: 2
+Ending <pre>
+Starting <var>
+token: NUMLIT Lexeme: 2
+Ending <var>
+Starting <post>
+token: PLUS Lexeme: +
+Ending <post>
+Ending <term>
+Starting <stmt_tail>
+token: PLUS Lexeme: +
+Starting <binop>
+token: PLUS Lexeme: +
+Ending <binop>
+Starting <stmt>
+token: LPAREN Lexeme: (
+Starting <term>
+token: LPAREN Lexeme: (
+Starting <stmt>
+token: IDENT Lexeme: a
+Starting <term>
+token: IDENT Lexeme: a
+Starting <pre>
+token: IDENT Lexeme: a
+Ending <pre>
+Starting <var>
+token: IDENT Lexeme: a
+Ending <var>
+Starting <post>
+token: MINUS Lexeme: -
+Ending <post>
+Ending <term>
+Starting <stmt_tail>
+token: MINUS Lexeme: -
+Starting <binop>
+token: MINUS Lexeme: -
+Ending <binop>
+Starting <stmt>
+token: LPAREN Lexeme: (
+Starting <term>
+token: LPAREN Lexeme: (
+Starting <stmt>
+token: NUMLIT Lexeme: 3
+Starting <term>
+token: NUMLIT Lexeme: 3
+Starting <pre>
+token: NUMLIT Lexeme: 3
+Ending <pre>
+Starting <var>
+token: NUMLIT Lexeme: 3
+Ending <var>
+Starting <post>
+token: MULT Lexeme: *
+Ending <post>
+Ending <term>
+Starting <stmt_tail>
+token: MULT Lexeme: *
+Starting <binop>
+token: MULT Lexeme: *
+Ending <binop>
+Starting <stmt>
+token: IDENT Lexeme: d
+Starting <term>
+token: IDENT Lexeme: d
+Starting <pre>
+token: IDENT Lexeme: d
+Ending <pre>
+Starting <var>
+token: IDENT Lexeme: d
+Ending <var>
+Starting <post>
+token: MINUS Lexeme: -
+Ending <post>
+Ending <term>
+Starting <stmt_tail>
+token: MINUS Lexeme: -
+Starting <binop>
+token: MINUS Lexeme: -
+Ending <binop>
+Starting <stmt>
+token: NUMLIT Lexeme: 4
+Starting <term>
+token: NUMLIT Lexeme: 4
+Starting <pre>
+token: NUMLIT Lexeme: 4
+Ending <pre>
+Starting <var>
+token: NUMLIT Lexeme: 4
+Ending <var>
+Starting <post>
+token: RPAREN Lexeme: )
+Ending <post>
+Ending <term>
+Starting <stmt_tail>
+token: RPAREN Lexeme: )
+Ending <stmt_tail>
+Ending <stmt>
+Ending <stmt_tail>
+Ending <stmt>
+Ending <stmt_tail>
+Ending <stmt>
+Ending <term>
+Starting <stmt_tail>
+token: DIV Lexeme: /
+Starting <binop>
+token: DIV Lexeme: /
+Ending <binop>
+Starting <stmt>
+token: NUMLIT Lexeme: 6
+Starting <term>
+token: NUMLIT Lexeme: 6
+Starting <pre>
+token: NUMLIT Lexeme: 6
+Ending <pre>
+Starting <var>
+token: NUMLIT Lexeme: 6
+Ending <var>
+Starting <post>
+token: RPAREN Lexeme: )
+Ending <post>
+Ending <term>
+Starting <stmt_tail>
+token: RPAREN Lexeme: )
+Ending <stmt_tail>
+Ending <stmt>
+Ending <stmt_tail>
+Ending <stmt>
+Ending <stmt_tail>
+Ending <stmt>
+Ending <term>
+Starting <stmt_tail>
+token: PLUS Lexeme: +
+Starting <binop>
+token: PLUS Lexeme: +
+Ending <binop>
+Starting <stmt>
+token: NUMLIT Lexeme: 1
+Starting <term>
+token: NUMLIT Lexeme: 1
+Starting <pre>
+token: NUMLIT Lexeme: 1
+Ending <pre>
+Starting <var>
+token: NUMLIT Lexeme: 1
+Ending <var>
+Starting <post>
+token: RPAREN Lexeme: )
+Ending <post>
+Ending <term>
+Starting <stmt_tail>
+token: RPAREN Lexeme: )
+Ending <stmt_tail>
+Ending <stmt>
+Ending <stmt_tail>
+Ending <stmt>
+Ending <stmt_tail>
+Ending <stmt>
+Ending <term>
+Starting <stmt_tail>
+token: SEMI Lexeme: ;
+Ending <stmt_tail>
+Ending <stmt>
+Ending <stmt_tail>
+Ending <stmt>
+Ending <stmt_tail>
+Ending <stmt>
+Ending <stmt_tail>
+Ending <stmt>
+Ending <stmt_tail>
+Ending <stmt>
+Ending <stmt_tail>
+Ending <stmt>
+Ending <stmt_tail>
+Ending <stmt>
+Ending <term>
+Starting <stmt_tail>
+token: SEMI Lexeme: ;
+Ending <stmt_tail>
+Ending <stmt>
+Ending <stmt_tail>
+Ending <stmt>
+SHOULD SEE SEMI IN <more_stmts>
+Starting <more_stmts>
+token: IDENT Lexeme: c
+Starting <stmt>
+token: IDENT Lexeme: c
+Starting <term>
+token: IDENT Lexeme: c
+Starting <pre>
+token: IDENT Lexeme: c
+Ending <pre>
+Starting <var>
+token: IDENT Lexeme: c
+Ending <var>
+Starting <post>
+token: PLUSPLUS Lexeme: ++
+Ending <post>
+Ending <term>
+Starting <stmt_tail>
+token: SEMI Lexeme: ;
+Ending <stmt_tail>
+Ending <stmt>
+SHOULD SEE SEMI IN <more_stmts>
+Starting <more_stmts>
+token: MINUSMINUS Lexeme: --
+Starting <stmt>
+token: MINUSMINUS Lexeme: --
+Starting <term>
+token: MINUSMINUS Lexeme: --
+Starting <pre>
+token: MINUSMINUS Lexeme: --
+Starting <uoppre>
+token: MINUSMINUS Lexeme: --
+Ending <uoppre>
+Starting <pre>
+token: IDENT Lexeme: d
+Ending <pre>
+Ending <pre>
+Starting <var>
+token: IDENT Lexeme: d
+Ending <var>
+Starting <post>
+token: SEMI Lexeme: ;
+Ending <post>
+Ending <term>
+Starting <stmt_tail>
+token: SEMI Lexeme: ;
+Ending <stmt_tail>
+Ending <stmt>
+SHOULD SEE SEMI IN <more_stmts>
+Starting <more_stmts>
+token: PLUS Lexeme: +
+Starting <stmt>
+token: PLUS Lexeme: +
+Starting <term>
+token: PLUS Lexeme: +
+Starting <pre>
+token: PLUS Lexeme: +
+Starting <uoppre>
+token: PLUS Lexeme: +
+Ending <uoppre>
+Starting <pre>
+token: MINUS Lexeme: -
+Starting <uoppre>
+token: MINUS Lexeme: -
+Ending <uoppre>
+Starting <pre>
+token: IDENT Lexeme: a
+Ending <pre>
+Ending <pre>
+Ending <pre>
+Starting <var>
+token: IDENT Lexeme: a
+Ending <var>
+Starting <post>
+token: SEMI Lexeme: ;
+Ending <post>
+Ending <term>
+Starting <stmt_tail>
+token: SEMI Lexeme: ;
+Ending <stmt_tail>
+Ending <stmt>
+SHOULD SEE SEMI IN <more_stmts>
+Starting <more_stmts>
+token: MINUS Lexeme: -
+Starting <stmt>
+token: MINUS Lexeme: -
+Starting <term>
+token: MINUS Lexeme: -
+Starting <pre>
+token: MINUS Lexeme: -
+Starting <uoppre>
+token: MINUS Lexeme: -
+Ending <uoppre>
+Starting <pre>
+token: IDENT Lexeme: b
+Ending <pre>
+Ending <pre>
+Starting <var>
+token: IDENT Lexeme: b
+Ending <var>
+Starting <post>
+token: PLUS Lexeme: +
+Ending <post>
+Ending <term>
+Starting <stmt_tail>
+token: PLUS Lexeme: +
+Starting <binop>
+token: PLUS Lexeme: +
+Ending <binop>
+Starting <stmt>
+token: SEMI Lexeme: ;
+Starting <term>
+token: SEMI Lexeme: ;
+Starting <pre>
+token: SEMI Lexeme: ;
+Ending <pre>
+Starting <var>
+token: SEMI Lexeme: ;
+Ending <var>
+Starting <post>
+token: SEMI Lexeme: ;
+Ending <post>
+Ending <term>
+Starting <stmt_tail>
+token: SEMI Lexeme: ;
+Ending <stmt_tail>
+Ending <stmt>
+Ending <stmt_tail>
+Ending <stmt>
+SHOULD SEE SEMI IN <more_stmts>
+Starting <more_stmts>
+token: PLUSPLUS Lexeme: ++
+Starting <stmt>
+token: PLUSPLUS Lexeme: ++
+Starting <term>
+token: PLUSPLUS Lexeme: ++
+Starting <pre>
+token: PLUSPLUS Lexeme: ++
+Starting <uoppre>
+token: PLUSPLUS Lexeme: ++
+Ending <uoppre>
+Starting <pre>
+token: MULT Lexeme: *
+Ending <pre>
+Ending <pre>
+Starting <var>
+token: MULT Lexeme: *
+Ending <var>
+Starting <post>
+token: MULT Lexeme: *
+Ending <post>
+Ending <term>
+Starting <stmt_tail>
+token: MULT Lexeme: *
+Starting <binop>
+token: MULT Lexeme: *
+Ending <binop>
+Starting <stmt>
+token: PLUS Lexeme: +
+Starting <term>
+token: PLUS Lexeme: +
+Starting <pre>
+token: PLUS Lexeme: +
+Starting <uoppre>
+token: PLUS Lexeme: +
+Ending <uoppre>
+Starting <pre>
+token: MINUS Lexeme: -
+Starting <uoppre>
+token: MINUS Lexeme: -
+Ending <uoppre>
+Starting <pre>
+token: NOT Lexeme: !
+Starting <uoppre>
+token: NOT Lexeme: !
+Ending <uoppre>
+Starting <pre>
+token: IDENT Lexeme: c
+Ending <pre>
+Ending <pre>
+Ending <pre>
+Ending <pre>
+Starting <var>
+token: IDENT Lexeme: c
+Ending <var>
+Starting <post>
+token: PLUSPLUS Lexeme: ++
+Ending <post>
+Ending <term>
+Starting <stmt_tail>
+token: SEMI Lexeme: ;
+Ending <stmt_tail>
+Ending <stmt>
+Ending <stmt_tail>
+Ending <stmt>
+SHOULD SEE SEMI IN <more_stmts>
+Starting <more_stmts>
+token: EOFT Lexeme: ;
+Ending <more_stmts>
+Ending <more_stmts>
+Ending <more_stmts>
+Ending <more_stmts>
+Ending <more_stmts>
+Ending <more_stmts>
+Ending <more_stmts>
+Ending <more_stmts>
+Ending <more_stmts>
+Ending <more_stmts>
+Ending <more_stmts>
+ending <program>

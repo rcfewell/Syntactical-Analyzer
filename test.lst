@@ -1,0 +1,6 @@
+Input File: test.in
+   1: int a = 4, b = 5, c = 45;
+   2: int d = a < b ? d + c : d - c;
+   3: int x = a ** b;
+Error at 3,12: Identifier or numeric literal expected
+1 errors found in input file

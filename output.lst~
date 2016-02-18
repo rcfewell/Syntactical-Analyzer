@@ -1,0 +1,6 @@
+   1: int a = 4, b = 5, c = 45;
+   2: int d = a < b ? d + c : d - c;
+   3: int x = a ** b;
+Error at 3,12: Identifier or numeric literal expected
+Error at 3,16: Identifier or numeric literal expected
+Error at 3,16: ; expected
